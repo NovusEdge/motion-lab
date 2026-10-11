@@ -1,0 +1,16 @@
+<!-- Paste before </body>. anim.html?t=2.5 shows exactly the frame at 2.5 s, for a still
+     or a screenshot. The page's own playback loop must not start when ?t= or ?render= is set. -->
+<script>
+(function () {
+  var q = new URLSearchParams(location.search);
+  if (!q.has('t')) return;
+  var t = parseFloat(q.get('t')) || 0;
+  function freeze() {
+    if (typeof window.renderAt === 'function') window.renderAt(t);
+    document.getAnimations().forEach(function (a) { a.pause(); a.currentTime = t * 1000; });
+  }
+  freeze();
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(freeze);
+  window.addEventListener('load', freeze);
+})();
+</script>

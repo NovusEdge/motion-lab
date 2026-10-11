@@ -1,0 +1,16 @@
+{
+  "name": "motion-lab",
+  "description": "Skills for directing code-rendered motion: loops, product shots and launch clips.",
+  "owner": {
+    "name": "NovusEdge",
+    "url": "https://github.com/NovusEdge"
+  },
+  "plugins": [
+    {
+      "name": "motion-lab",
+      "source": "./",
+      "description": "Direct code-rendered motion: frame-exact loops and clips, reviewed by frame number, scored and exported for social posts.",
+      "keywords": ["motion", "animation", "video", "three.js", "loop", "ffmpeg"]
+    }
+  ]
+}

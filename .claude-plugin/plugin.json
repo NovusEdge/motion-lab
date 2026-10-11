@@ -1,0 +1,10 @@
+{
+  "name": "motion-lab",
+  "displayName": "Motion Lab",
+  "version": "0.1.0",
+  "description": "Direct code-rendered motion: frame-exact loops and clips from HTML, CSS, Canvas or three.js, reviewed by frame number, scored with synthesized sound and exported for social posts.",
+  "author": { "name": "NovusEdge" },
+  "license": "MIT",
+  "homepage": "https://github.com/NovusEdge/motion-lab",
+  "keywords": ["motion", "animation", "video", "three.js", "remotion", "gsap", "loop", "ffmpeg"]
+}
